@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="4" failures="0" name="com.force4us.service.SeckillServiceTest" time="3.029" errors="4" skipped="0">
+  <properties>
+    <property name="idea.version" value="2017.1.5"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="D:\soft\Java\jdk1.8.0_131\jre\bin"/>
+    <property name="java.vm.version" value="25.131-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="CN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\Workspace-spring\seckill-code"/>
+    <property name="java.runtime.version" value="1.8.0_131-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="D:\soft\Java\jdk1.8.0_131\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\ADMINI~1\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="D:\soft\apache-maven-3.0.4\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="GBK"/>
+    <property name="java.library.path" value="D:\soft\Java\jdk1.8.0_131\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\ATI Technologies\ATI.ACE\Core-Static;D:\soft\Java\jdk1.8.0_131\bin;D:\soft\Java\jdk1.8.0_131\jre\bin;D:\soft\apache-maven-3.0.4\bin;D:\soft\apache-tomcat-7.0.56\bin;D:\soft\apache-tomcat-7.0.56\lib; D:\soft\apache-tomcat-7.0.56\lib\servlet-api.jar;D:\soft\apache-tomcat-7.0.56\lib\jsp-api.jar;D:\soft\apache-tomcat-7.0.56-2\bin;D:\soft\apache-tomcat-7.0.56-2\lib;D:\soft\gradle-1.6\bin;D:\soft\apache-tomcat-7.0.56-2\lib\servlet-api.jar;D:\soft\apache-tomcat-7.0.56-2\lib\jsp-api.jar;C:\Program Files\Lenovo\Bluetooth Software\;C:\Program Files\Lenovo\Bluetooth Software\syswow64;c:\Program Files (x86)\QuickTime\QTSystem\;d:\soft\UltraEdit;d:\soft\Git\cmd;C:\Program Files (x86)\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\Tools\Binn\;C:\Program Files\Microsoft SQL Server\100\DTS\Binn\;D:\soft\apache-ant-1.9.11\bin;d:\soft\Windows7Master;D:\soft\MongoDB\Server\4.0\bin;D:\soft\Python\Scripts\;D:\soft\Python\;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="maven.repo.local" value="D:\mvn\shopmvn\shop-repository"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\Administrator"/>
+    <property name="user.timezone" value="Asia/Shanghai"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="Administrator"/>
+    <property name="java.class.path" value="D:\soft\apache-maven-3.0.4\boot\plexus-classworlds-2.4.jar;D:\soft\JetBrains2\IntelliJ IDEA 2017.1.5\lib\idea_rt.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="D:\soft\Java\jdk1.8.0_131\jre"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version=2017.1.5 -s D:\mvn\shopmvn\settings.xml -Dmaven.repo.local=D:\mvn\shopmvn\shop-repository install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="zh"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_131"/>
+    <property name="java.ext.dirs" value="D:\soft\Java\jdk1.8.0_131\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="D:\soft\Java\jdk1.8.0_131\jre\lib\resources.jar;D:\soft\Java\jdk1.8.0_131\jre\lib\rt.jar;D:\soft\Java\jdk1.8.0_131\jre\lib\sunrsasign.jar;D:\soft\Java\jdk1.8.0_131\jre\lib\jsse.jar;D:\soft\Java\jdk1.8.0_131\jre\lib\jce.jar;D:\soft\Java\jdk1.8.0_131\jre\lib\charsets.jar;D:\soft\Java\jdk1.8.0_131\jre\lib\jfr.jar;D:\soft\Java\jdk1.8.0_131\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\soft\apache-maven-3.0.4"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.force4us.service.SeckillServiceTest" name="executeSeckillProcedure" time="1.165">
+    <error message="Error attempting to get column &apos;create_time&apos; from result set.  Cause: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+; SQL []; Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp; nested exception is java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp" type="org.springframework.dao.TransientDataAccessResourceException">org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column &apos;create_time&apos; from result set.  Cause: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+; SQL []; Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp; nested exception is java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:108)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy13.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:165)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:69)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy14.queryById(Unknown Source)
+	at com.force4us.service.impl.SeckillServiceImpl.exportSeckillUrl(SeckillServiceImpl.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201)
+	at com.sun.proxy.$Proxy24.exportSeckillUrl(Unknown Source)
+	at com.force4us.service.SeckillServiceTest.executeSeckillProcedure(SeckillServiceTest.java:77)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862)
+	at com.mysql.jdbc.ResultSetRow.getTimestampFast(ResultSetRow.java:935)
+	at com.mysql.jdbc.ByteArrayRow.getTimestampFast(ByteArrayRow.java:130)
+	at com.mysql.jdbc.ResultSetImpl.getTimestampInternal(ResultSetImpl.java:5950)
+	at com.mysql.jdbc.ResultSetImpl.getTimestamp(ResultSetImpl.java:5618)
+	at com.mysql.jdbc.ResultSetImpl.getTimestamp(ResultSetImpl.java:5647)
+	at com.mchange.v2.c3p0.impl.NewProxyResultSet.getTimestamp(NewProxyResultSet.java:3394)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ResultSetLogger.invoke(ResultSetLogger.java:68)
+	at com.sun.proxy.$Proxy18.getTimestamp(Unknown Source)
+	at org.apache.ibatis.type.DateTypeHandler.getNullableResult(DateTypeHandler.java:39)
+	at org.apache.ibatis.type.DateTypeHandler.getNullableResult(DateTypeHandler.java:28)
+	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:66)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyAutomaticMappings(DefaultResultSetHandler.java:434)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:344)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:298)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:273)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:246)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:160)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 49 more
+</error>
+    <system-out>21:27:43.557 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/D:/Workspace-spring/seckill-code/target/classes/com/force4us/entity
+21:27:43.558 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/D:/Workspace-spring/seckill-code/target/classes/com/force4us/entity
+21:27:43.558 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: Seckill.class
+21:27:43.560 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: SuccessKilled.class
+21:27:43.560 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Listing file:/D:/Workspace-spring/seckill-code/target/classes/com/force4us/entity
+21:27:43.560 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/D:/Workspace-spring/seckill-code/target/classes/com/force4us/entity/Seckill.class
+21:27:43.561 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/D:/Workspace-spring/seckill-code/target/classes/com/force4us/entity/Seckill.class
+21:27:43.561 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;\
+21:27:43.562 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Find JAR URL: file:/D:/Workspace-spring/seckill-code/target/classes/com/force4us/entity/SuccessKilled.class
+21:27:43.562 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Not a JAR: file:/D:/Workspace-spring/seckill-code/target/classes/com/force4us/entity/SuccessKilled.class
+21:27:43.563 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Reader entry: ����&amp;#0;&amp;#0;&amp;#0;1&amp;#0;V
+21:27:43.563 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.force4us.entity.Seckill matches criteria [is assignable to Object]
+21:27:43.563 [main] DEBUG org.apache.ibatis.io.ResolverUtil - Checking to see if class com.force4us.entity.SuccessKilled matches criteria [is assignable to Object]
+21:27:43.563 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Scanned package: &apos;com.force4us.entity&apos; for aliases
+21:27:43.580 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed configuration file: &apos;class path resource [mybatis-config.xml]&apos;
+21:27:43.608 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: &apos;file [D:\Workspace-spring\seckill-code\target\classes\mapper\SeckillDao.xml]&apos;
+21:27:43.635 [main] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: &apos;file [D:\Workspace-spring\seckill-code\target\classes\mapper\SuccessKilledDao.xml]&apos;
+21:27:44.756 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+21:27:44.756 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63dd899] was not registered for synchronization because synchronization is not active
+21:27:44.807 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@9ef8eb7] will not be managed by Spring
+21:27:44.807 [main] DEBUG c.force4us.dao.SeckillDao.queryById - ==&gt;  Preparing: SELECT * FROM seckill WHERE seckill_id = ? 
+21:27:44.808 [main] DEBUG c.force4us.dao.SeckillDao.queryById - ==&gt; Parameters: 1002(Long)
+21:27:44.854 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@63dd899]
+</system-out>
+    <system-err>ʮһ�� 21, 2018 9:27:43 ���� org.springframework.test.context.support.DefaultTestContextBootstrapper getDefaultTestExecutionListenerClassNames
+��Ϣ: Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+ʮһ�� 21, 2018 9:27:43 ���� org.springframework.test.context.support.DefaultTestContextBootstrapper getTestExecutionListeners
+��Ϣ: Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@602e0143, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@2c07545f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e57b96d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@32c726ee, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@22f31dec]
+ʮһ�� 21, 2018 9:27:43 ���� org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+��Ϣ: Loading XML bean definitions from class path resource [spring/spring-dao.xml]
+ʮһ�� 21, 2018 9:27:43 ���� org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+��Ϣ: Loading XML bean definitions from class path resource [spring/spring-service.xml]
+ʮһ�� 21, 2018 9:27:43 ���� org.springframework.context.support.GenericApplicationContext prepareRefresh
+��Ϣ: Refreshing org.springframework.context.support.GenericApplicationContext@34c01041: startup date [Wed Nov 21 21:27:43 CST 2018]; root of context hierarchy
+ʮһ�� 21, 2018 9:27:43 ���� org.springframework.context.support.PropertySourcesPlaceholderConfigurer loadProperties
+��Ϣ: Loading properties file from class path resource [jdbc.properties]
+ʮһ�� 21, 2018 9:27:44 ���� com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource getPoolManager
+��Ϣ: Initializing c3p0 pool... com.mchange.v2.c3p0.ComboPooledDataSource [ acquireIncrement -&gt; 3, acquireRetryAttempts -&gt; 2, acquireRetryDelay -&gt; 1000, autoCommitOnClose -&gt; false, automaticTestTable -&gt; null, breakAfterAcquireFailure -&gt; false, checkoutTimeout -&gt; 1000, connectionCustomizerClassName -&gt; null, connectionTesterClassName -&gt; com.mchange.v2.c3p0.impl.DefaultConnectionTester, dataSourceName -&gt; 1hgegox9zf3xliw12miswt|4758820d, debugUnreturnedConnectionStackTraces -&gt; false, description -&gt; null, driverClass -&gt; com.mysql.jdbc.Driver, factoryClassLocation -&gt; null, forceIgnoreUnresolvedTransactions -&gt; false, identityToken -&gt; 1hgegox9zf3xliw12miswt|4758820d, idleConnectionTestPeriod -&gt; 0, initialPoolSize -&gt; 3, jdbcUrl -&gt; jdbc:mysql:///seckill?useUnicode=true&amp;characterEncoding=utf-8, maxAdministrativeTaskTime -&gt; 0, maxConnectionAge -&gt; 0, maxIdleTime -&gt; 0, maxIdleTimeExcessConnections -&gt; 0, maxPoolSize -&gt; 30, maxStatements -&gt; 0, maxStatementsPerConnection -&gt; 0, minPoolSize -&gt; 10, numHelperThreads -&gt; 3, numThreadsAwaitingCheckoutDefaultUser -&gt; 0, preferredTestQuery -&gt; null, properties -&gt; {user=******, password=******}, propertyCycle -&gt; 0, testConnectionOnCheckin -&gt; false, testConnectionOnCheckout -&gt; false, unreturnedConnectionTimeout -&gt; 0, usesTraditionalReflectiveProxies -&gt; false ]
+</system-err>
+  </testcase>
+  <testcase classname="com.force4us.service.SeckillServiceTest" name="getById" time="0.245">
+    <error message="Error attempting to get column &apos;create_time&apos; from result set.  Cause: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+; SQL []; Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp; nested exception is java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp" type="org.springframework.dao.TransientDataAccessResourceException">org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column &apos;create_time&apos; from result set.  Cause: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+; SQL []; Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp; nested exception is java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:108)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy13.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:165)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:69)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy14.queryById(Unknown Source)
+	at com.force4us.service.impl.SeckillServiceImpl.getById(SeckillServiceImpl.java:54)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201)
+	at com.sun.proxy.$Proxy24.getById(Unknown Source)
+	at com.force4us.service.SeckillServiceTest.getById(SeckillServiceTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862)
+	at com.mysql.jdbc.ResultSetRow.getTimestampFast(ResultSetRow.java:935)
+	at com.mysql.jdbc.ByteArrayRow.getTimestampFast(ByteArrayRow.java:130)
+	at com.mysql.jdbc.ResultSetImpl.getTimestampInternal(ResultSetImpl.java:5950)
+	at com.mysql.jdbc.ResultSetImpl.getTimestamp(ResultSetImpl.java:5618)
+	at com.mysql.jdbc.ResultSetImpl.getTimestamp(ResultSetImpl.java:5647)
+	at com.mchange.v2.c3p0.impl.NewProxyResultSet.getTimestamp(NewProxyResultSet.java:3394)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ResultSetLogger.invoke(ResultSetLogger.java:68)
+	at com.sun.proxy.$Proxy18.getTimestamp(Unknown Source)
+	at org.apache.ibatis.type.DateTypeHandler.getNullableResult(DateTypeHandler.java:39)
+	at org.apache.ibatis.type.DateTypeHandler.getNullableResult(DateTypeHandler.java:28)
+	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:66)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyAutomaticMappings(DefaultResultSetHandler.java:434)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:344)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:298)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:273)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:246)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:160)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 49 more
+</error>
+    <system-out>21:27:44.870 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+21:27:44.870 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40844aab] was not registered for synchronization because synchronization is not active
+21:27:44.952 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@5b619d14] will not be managed by Spring
+21:27:44.953 [main] DEBUG c.force4us.dao.SeckillDao.queryById - ==&gt;  Preparing: SELECT * FROM seckill WHERE seckill_id = ? 
+21:27:44.954 [main] DEBUG c.force4us.dao.SeckillDao.queryById - ==&gt; Parameters: 1000(Long)
+21:27:45.097 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@40844aab]
+</system-out>
+  </testcase>
+  <testcase classname="com.force4us.service.SeckillServiceTest" name="exportSeckillLogic" time="0.999">
+    <error message="Error attempting to get column &apos;create_time&apos; from result set.  Cause: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+; SQL []; Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp; nested exception is java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp" type="org.springframework.dao.TransientDataAccessResourceException">org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column &apos;create_time&apos; from result set.  Cause: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+; SQL []; Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp; nested exception is java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:108)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy13.selectOne(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:165)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:69)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy14.queryById(Unknown Source)
+	at com.force4us.service.impl.SeckillServiceImpl.exportSeckillUrl(SeckillServiceImpl.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201)
+	at com.sun.proxy.$Proxy24.exportSeckillUrl(Unknown Source)
+	at com.force4us.service.SeckillServiceTest.exportSeckillLogic(SeckillServiceTest.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862)
+	at com.mysql.jdbc.ResultSetRow.getTimestampFast(ResultSetRow.java:935)
+	at com.mysql.jdbc.ByteArrayRow.getTimestampFast(ByteArrayRow.java:130)
+	at com.mysql.jdbc.ResultSetImpl.getTimestampInternal(ResultSetImpl.java:5950)
+	at com.mysql.jdbc.ResultSetImpl.getTimestamp(ResultSetImpl.java:5618)
+	at com.mysql.jdbc.ResultSetImpl.getTimestamp(ResultSetImpl.java:5647)
+	at com.mchange.v2.c3p0.impl.NewProxyResultSet.getTimestamp(NewProxyResultSet.java:3394)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ResultSetLogger.invoke(ResultSetLogger.java:68)
+	at com.sun.proxy.$Proxy18.getTimestamp(Unknown Source)
+	at org.apache.ibatis.type.DateTypeHandler.getNullableResult(DateTypeHandler.java:39)
+	at org.apache.ibatis.type.DateTypeHandler.getNullableResult(DateTypeHandler.java:28)
+	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:66)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyAutomaticMappings(DefaultResultSetHandler.java:434)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:344)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:298)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:273)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:246)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:160)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 49 more
+</error>
+    <system-out>21:27:46.142 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+21:27:46.143 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a3e78f] was not registered for synchronization because synchronization is not active
+21:27:46.144 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@17a1e4ca] will not be managed by Spring
+21:27:46.144 [main] DEBUG c.force4us.dao.SeckillDao.queryById - ==&gt;  Preparing: SELECT * FROM seckill WHERE seckill_id = ? 
+21:27:46.145 [main] DEBUG c.force4us.dao.SeckillDao.queryById - ==&gt; Parameters: 1000(Long)
+21:27:46.153 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a3e78f]
+</system-out>
+  </testcase>
+  <testcase classname="com.force4us.service.SeckillServiceTest" name="getSeckillList" time="0.013">
+    <error message="Error attempting to get column &apos;create_time&apos; from result set.  Cause: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+; SQL []; Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp; nested exception is java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp" type="org.springframework.dao.TransientDataAccessResourceException">org.springframework.dao.TransientDataAccessResourceException: Error attempting to get column &apos;create_time&apos; from result set.  Cause: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+; SQL []; Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp; nested exception is java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+	at org.springframework.jdbc.support.SQLStateSQLExceptionTranslator.doTranslate(SQLStateSQLExceptionTranslator.java:108)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:73)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:81)
+	at org.mybatis.spring.MyBatisExceptionTranslator.translateExceptionIfPossible(MyBatisExceptionTranslator.java:74)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:399)
+	at com.sun.proxy.$Proxy13.selectList(Unknown Source)
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:205)
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:122)
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:64)
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:53)
+	at com.sun.proxy.$Proxy14.queryAll(Unknown Source)
+	at com.force4us.service.impl.SeckillServiceImpl.getSeckillList(SeckillServiceImpl.java:50)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:201)
+	at com.sun.proxy.$Proxy24.getSeckillList(Unknown Source)
+	at com.force4us.service.SeckillServiceTest.getSeckillList(SeckillServiceTest.java:37)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:47)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:44)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestMethodCallbacks.evaluate(RunBeforeTestMethodCallbacks.java:73)
+	at org.springframework.test.context.junit4.statements.RunAfterTestMethodCallbacks.evaluate(RunAfterTestMethodCallbacks.java:82)
+	at org.springframework.test.context.junit4.statements.SpringRepeat.evaluate(SpringRepeat.java:73)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:271)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:224)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:83)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:68)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:163)
+	at org.apache.maven.surefire.junit4.JUnit4TestSet.execute(JUnit4TestSet.java:53)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:123)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:104)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:164)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:110)
+	at org.apache.maven.surefire.booter.SurefireStarter.invokeProvider(SurefireStarter.java:175)
+	at org.apache.maven.surefire.booter.SurefireStarter.runSuitesInProcessWhenForked(SurefireStarter.java:107)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:68)
+Caused by: java.sql.SQLException: Value &apos;0000-00-00 00:00:00&apos; can not be represented as java.sql.Timestamp
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:959)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:898)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:887)
+	at com.mysql.jdbc.SQLError.createSQLException(SQLError.java:862)
+	at com.mysql.jdbc.ResultSetRow.getTimestampFast(ResultSetRow.java:935)
+	at com.mysql.jdbc.ByteArrayRow.getTimestampFast(ByteArrayRow.java:130)
+	at com.mysql.jdbc.ResultSetImpl.getTimestampInternal(ResultSetImpl.java:5950)
+	at com.mysql.jdbc.ResultSetImpl.getTimestamp(ResultSetImpl.java:5618)
+	at com.mysql.jdbc.ResultSetImpl.getTimestamp(ResultSetImpl.java:5647)
+	at com.mchange.v2.c3p0.impl.NewProxyResultSet.getTimestamp(NewProxyResultSet.java:3394)
+	at sun.reflect.GeneratedMethodAccessor6.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.ibatis.logging.jdbc.ResultSetLogger.invoke(ResultSetLogger.java:68)
+	at com.sun.proxy.$Proxy18.getTimestamp(Unknown Source)
+	at org.apache.ibatis.type.DateTypeHandler.getNullableResult(DateTypeHandler.java:39)
+	at org.apache.ibatis.type.DateTypeHandler.getNullableResult(DateTypeHandler.java:28)
+	at org.apache.ibatis.type.BaseTypeHandler.getResult(BaseTypeHandler.java:66)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.applyAutomaticMappings(DefaultResultSetHandler.java:434)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.getRowValue(DefaultResultSetHandler.java:344)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValuesForSimpleResultMap(DefaultResultSetHandler.java:298)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleRowValues(DefaultResultSetHandler.java:273)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSet(DefaultResultSetHandler.java:246)
+	at org.apache.ibatis.executor.resultset.DefaultResultSetHandler.handleResultSets(DefaultResultSetHandler.java:160)
+	at org.apache.ibatis.executor.statement.PreparedStatementHandler.query(PreparedStatementHandler.java:63)
+	at org.apache.ibatis.executor.statement.RoutingStatementHandler.query(RoutingStatementHandler.java:78)
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62)
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:303)
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:154)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:102)
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:82)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:120)
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:113)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:386)
+	... 50 more
+</error>
+    <system-out>21:27:46.159 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+21:27:46.159 [main] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f9678e1] was not registered for synchronization because synchronization is not active
+21:27:46.159 [main] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [com.mchange.v2.c3p0.impl.NewProxyConnection@189aa67a] will not be managed by Spring
+21:27:46.159 [main] DEBUG com.force4us.dao.SeckillDao.queryAll - ==&gt;  Preparing: SELECT * FROM seckill ORDER BY create_time DESC limit ?,? 
+21:27:46.160 [main] DEBUG com.force4us.dao.SeckillDao.queryAll - ==&gt; Parameters: 0(Integer), 4(Integer)
+21:27:46.169 [main] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5f9678e1]
+</system-out>
+  </testcase>
+</testsuite>
