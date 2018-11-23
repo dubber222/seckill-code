@@ -1,8 +1,10 @@
 # seckill
 a 'seckill' web site which is developed by spring, spring mvc and mybatis
 
-#转载
+#转载 1
 https://blog.csdn.net/luomingkui1109/article/details/77432192
+#装载 2
+https://blog.csdn.net/lewky_liu/column/info/25722
 
 
 >2018-11-22
